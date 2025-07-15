@@ -79,12 +79,14 @@ GitHub é uma **plataforma online** que guarda seus projetos Git e permite que v
 
 # 📘 Conceitos fundamentais
 
-1.  **Repositório**: pasta do projeto com controle de versão
-2.  **Clone**: copiar um repositório remoto para o local
-3.  **Fork**: criar uma cópia de um repositório para modificar
-4.  **Commit**: um registro de alterações
-5.  **Push**: enviar alterações para o GitHub a partir do RStudio
-6.  **Pull**: baixar alterações do GitHub para o RStudio
+1.  **Repositório**: pasta do projeto com controle de versão. Pode ser local (no seu computador) ou remoto (no GitHub).
+2.  **Clone**: copiar um repositório do GitHub para a pasta de trabalho local
+   no RStudio. Isso cria uma cópia local do repositório remoto.
+3.  **Fork**: criar uma cópia de um repositório para a sua conta, sem modificar o original.
+   Útil para contribuir com projetos de outras pessoas, pois permite criar pull requests para sugerir mudanças ao original.
+4.  **Commit**: um registro de alterações. É como tirar uma foto do estado atual do projeto. Cada commit deve ter uma mensagem descritiva.
+5.  **Push**: enviar alterações para o GitHub a partir do RStudio. Isso atualiza o repositório remoto com as alterações feitas localmente.
+6.  **Pull**: baixar alterações do GitHub para o RStudio. Isso atualiza o repositório local com as alterações feitas remotamente.
 
 ![Fluxo de trabalho entre GitHub e projeto local no RStudio](figuras/fluxograma.png){fig-align="center"}
 
