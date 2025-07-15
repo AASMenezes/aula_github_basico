@@ -1,0 +1,130 @@
+---
+title: "Tutorial Interativo: GitHub com R e RStudio"
+author: "Alessandra Menezes"
+format: html
+editor: visual
+---
+
+# 🚀 Introdução
+
+Bem-vindo! Este tutorial foi feito para quem **nunca usou Git ou GitHub**, especialmente no contexto de **ciência de dados com R**.
+
+## 🎯 O que você vai aprender
+
+- O que são Git e GitHub e por que usá-los
+- Como instalar e configurar tudo
+- Como criar projetos no GitHub e no RStudio
+- Como salvar e compartilhar seu trabalho usando versionamento
+- Como fazer uma análise simples em R com Git
+
+---
+
+# 🧠 Entendendo o Git e o GitHub
+
+## 📦 O que é Git?
+
+Git é como uma **máquina do tempo** para o seu projeto. Ele salva versões do seu código, permitindo que você volte atrás, colabore e mantenha tudo organizado.
+
+![Git logo](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png){fig-align="center" width="120"}
+
+## ☁️ O que é GitHub?
+
+GitHub é uma **plataforma online** que guarda seus projetos Git e permite que você trabalhe com outras pessoas.
+
+![GitHub logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png){fig-align="center" width="120"}
+
+---
+
+# 🧰 Configurando o Ambiente
+
+## 1. Instale o Git
+
+👉 [Baixe o Git aqui](https://git-scm.com/downloads)
+
+## 2. Verifique se o Git está funcionando no RStudio
+
+1. Abra o RStudio
+2. Vá em `Tools > Global Options > Git/SVN`
+3. Se necessário, aponte para o executável:
+   - Windows: `C:/Program Files/Git/bin/git.exe`
+   - Linux/Mac: `/usr/bin/git`
+
+## 3. Configure seu nome e e-mail no terminal do RStudio
+
+```bash
+git config --global user.name "Seu Nome"
+git config --global user.email "email@example.com"
+```
+
+---
+
+# 📘 Conceitos Fundamentais
+
+| Termo      | Significado                                          |
+|------------|------------------------------------------------------|
+| Repositório | Pasta do projeto com histórico de versões          |
+| Commit     | Salvamento de alterações com mensagem                |
+| Push       | Enviar alterações para o GitHub                      |
+| Pull       | Trazer atualizações do GitHub                        |
+| Clone      | Copiar repositório online para seu computador        |
+| Branch     | Linha paralela de desenvolvimento                    |
+
+---
+
+# 🔗 Conectando o GitHub ao RStudio
+
+## 1. No GitHub
+
+1. Crie um novo repositório
+2. Dê um nome, adicione um README
+3. Copie a URL HTTPS
+
+## 2. No RStudio
+
+1. Vá em `File > New Project > Version Control > Git`
+2. Cole a URL do GitHub
+3. Escolha uma pasta local
+4. Clique em **Create Project**
+
+---
+
+# ✍️ Trabalhando com Git no RStudio
+
+1. Modifique ou crie arquivos `.R`
+2. Vá na aba **Git**
+3. Selecione os arquivos → clique em **Commit**
+4. Escreva uma mensagem → clique em **Commit**
+5. Clique em **Push** para enviar ao GitHub
+6. Clique em **Pull** para trazer atualizações
+
+---
+
+# 🧪 Atividade Prática
+
+1. Clone o repositório [tutorial GitHub](https://github.com/AASMenezes/aula_github_basico)
+2. Crie um arquivo `resumo.R` com o código:
+
+```r
+summary(iris)
+```
+
+3. Salve, faça commit e push
+4. Verifique se o arquivo aparece no GitHub
+
+---
+
+# 🧠 Dicas Finais
+
+- Commits pequenos e frequentes
+- Mensagens claras
+- Use `.gitignore` para arquivos que não devem ser versionados
+- Atualize sempre o `README.md`
+- Use branches para testes e novas ideias
+
+---
+
+# 📚 Para Saber Mais
+
+- 📘 [Happy Git with R](https://happygitwithr.com/)
+- 📖 [Pro Git](https://git-scm.com/book/en/v2)
+- 🧰 [RStudio Guide: Git](https://docs.posit.co/ide/user/ide/guide/tools/version-control.html)
